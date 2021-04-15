@@ -23,6 +23,7 @@ public class BankAccount {
 		this.balance = balance;
 		this.withdrawalFee = withdrawalFee;
 		this.annualInterestRate = annualInterestRate;
+		accountID++;
 	}
 
 	public String getAccountName() {
@@ -88,7 +89,7 @@ public class BankAccount {
 	}
 
 	public long getAccountID() { 
-		return accountID++; 
+		return accountID; 
 	} 
 
 	public String truncateString(String accountName) {
